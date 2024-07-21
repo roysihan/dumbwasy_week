@@ -1,0 +1,189 @@
+body {
+  font-family: Arial, sans-serif; /* Mengatur font default untuk seluruh halaman */
+  margin: 0; /* Menghilangkan margin default dari body */
+  background-color: #f0f0f0; /* Memberikan warna latar belakang abu-abu muda */
+}
+
+.navbar {
+  display: flex; /* Menggunakan flexbox untuk mengatur tata letak navbar */
+  justify-content: flex-start; /* Menyusun item di awal (kiri) secara horizontal */
+  align-items: center; /* Menyusun item di tengah secara vertikal */
+  padding: 10px 20px; /* Memberikan padding di atas/bawah 10px dan kiri/kanan 20px */
+  background-color: #ffffff; /* Memberikan warna latar belakang putih pada navbar */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Memberikan bayangan halus di bawah navbar */
+  flex-wrap: wrap; /* Mengatur agar item dapat membungkus pada baris berikutnya jika diperlukan */
+}
+
+.navbar .left-nav {
+  display: flex; /* Menggunakan flexbox untuk mengatur tata letak dalam elemen left-nav */
+  align-items: center; /* Menyusun item di tengah secara vertikal */
+  flex-wrap: wrap; /* Mengatur agar item dapat membungkus pada baris berikutnya jika diperlukan */
+  margin-right: auto; /* Mendorong tombol kontak ke kanan */
+}
+
+.navbar img {
+  height: 40px; /* Mengatur tinggi gambar logo di navbar */
+}
+
+.navbar nav {
+  display: flex; /* Menggunakan flexbox untuk mengatur tata letak dalam elemen nav */
+  align-items: center; /* Menyusun item di tengah secara vertikal */
+  margin-left: 20px; /* Memberikan jarak kiri sebesar 20px pada elemen nav */
+  flex-wrap: wrap; /* Mengatur agar item dapat membungkus pada baris berikutnya jika diperlukan */
+}
+
+.navbar nav a {
+  margin-left: 20px; /* Memberikan jarak kiri sebesar 20px pada setiap link dalam nav */
+  text-decoration: none; /* Menghilangkan garis bawah pada link */
+  color: #000; /* Mengatur warna teks link menjadi hitam */
+  font-size: 16px; /* Mengatur ukuran font link */
+}
+
+.navbar .contact-button {
+  background-color: #000; /* Memberikan warna latar belakang hitam pada tombol */
+  color: #fff; /* Mengatur warna teks pada tombol menjadi putih */
+  padding: 8px 16px; /* Memberikan padding di atas/bawah 8px dan kiri/kanan 16px */
+  border-radius: 5px; /* Memberikan radius sudut sebesar 5px untuk membuat sudut tombol menjadi bulat */
+  text-decoration: none; /* Menghilangkan garis bawah pada link */
+}
+
+.profile-container {
+  display: flex; /* Menggunakan flexbox untuk mengatur tata letak dalam kontainer profil */
+  justify-content: center; /* Menyusun item di tengah secara horizontal */
+  align-items: center; /* Menyusun item di tengah secara vertikal */
+  height: calc(
+    100vh - 70px
+  ); /* Mengatur tinggi untuk menyesuaikan dengan tinggi viewport dikurangi tinggi navbar */
+}
+
+.profile-card {
+  background: white; /* Memberikan warna latar belakang putih pada kartu profil */
+  border-radius: 10px; /* Memberikan radius sudut sebesar 10px untuk membuat sudut kartu menjadi bulat */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Memberikan bayangan halus di bawah kartu profil */
+  width: 90%; /* Mengatur lebar kartu profil sebesar 90% dari lebar halaman */
+  max-width: 621px; /* Mengatur lebar maksimum kartu profil sebesar 621px */
+  height: auto; /* Mengatur tinggi kartu profil secara otomatis sesuai dengan konten */
+  padding: 20px; /* Memberikan padding sebesar 20px di seluruh sisi kartu profil */
+  text-align: left; /* Mengatur teks dalam kartu profil untuk rata kiri */
+  display: flex; /* Menggunakan flexbox untuk mengatur tata letak dalam kartu profil */
+  flex-direction: column; /* Menyusun item secara vertikal */
+  justify-content: space-between; /* Menyusun item dengan jarak yang sama di antara mereka */
+}
+
+.profile-card .profile-image {
+  border-radius: 10px; /* Memberikan radius sudut sebesar 10px untuk membuat sudut gambar menjadi bulat */
+  width: 100%; /* Mengatur lebar gambar sebesar 100% dari lebar parent element */
+  max-width: 267px; /* Mengatur lebar maksimum gambar sebesar 267px */
+  height: auto; /* Mengatur tinggi gambar secara otomatis sesuai dengan lebar */
+  margin-top: 20px; /* Memberikan margin atas sebesar 20px pada gambar */
+  margin-bottom: 20px; /* Memberikan margin bawah sebesar 20px pada gambar */
+  display: block; /* Mengatur gambar sebagai elemen blok */
+  margin-left: auto; /* Mengatur margin kiri otomatis untuk menempatkan gambar di tengah secara horizontal */
+  margin-right: auto; /* Mengatur margin kanan otomatis untuk menempatkan gambar di tengah secara horizontal */
+}
+
+.profile-card .title {
+  margin: 15px 0 10px; /* Memberikan margin atas sebesar 15px, bawah sebesar 10px, tanpa margin kiri dan kanan */
+  font-size: 24px; /* Mengatur ukuran font judul */
+  text-align: center; /* Mengatur teks judul untuk rata tengah */
+}
+
+.profile-card .description {
+  color: #666; /* Mengatur warna teks deskripsi menjadi abu-abu */
+  font-size: 14px; /* Mengatur ukuran font deskripsi */
+  margin: 10px 0; /* Memberikan margin atas dan bawah sebesar 10px, tanpa margin kiri dan kanan */
+  width: 100%; /* Mengatur lebar deskripsi sebesar 100% dari lebar parent element */
+  max-width: 511px; /* Mengatur lebar maksimum deskripsi sebesar 511px */
+  margin-left: auto; /* Mengatur margin kiri otomatis untuk menempatkan deskripsi di tengah secara horizontal */
+  margin-right: auto; /* Mengatur margin kanan otomatis untuk menempatkan deskripsi di tengah secara horizontal */
+  text-align: left; /* Mengatur teks deskripsi untuk rata kiri */
+}
+
+.profile-card .button {
+  display: inline-block; /* Menampilkan elemen sebagai blok sebaris */
+  padding: 5px 10px; /* Memberikan padding di atas/bawah 5px dan kiri/kanan 10px */
+  margin: 5px 0; /* Memberikan margin atas dan bawah sebesar 5px */
+  background: #000; /* Memberikan warna latar belakang hitam pada tombol */
+  color: #fff; /* Mengatur warna teks pada tombol menjadi putih */
+  text-decoration: none; /* Menghilangkan garis bawah pada link */
+  border-radius: 5px; /* Memberikan radius sudut sebesar 5px untuk membuat sudut tombol menjadi bulat */
+  width: 100%; /* Mengatur lebar tombol sebesar 100% dari lebar parent element */
+  max-width: 125px; /* Mengatur lebar maksimum tombol sebesar 125px */
+  height: 31px; /* Mengatur tinggi tombol sebesar 31px */
+  text-align: center; /* Mengatur teks dalam tombol untuk rata tengah */
+  line-height: 31px; /* Mengatur tinggi garis teks agar sesuai dengan tinggi tombol */
+}
+
+.profile-card .social-icons {
+  margin: 20px 0; /* Memberikan margin atas dan bawah sebesar 20px */
+  text-align: center; /* Mengatur teks dan ikon dalam elemen social-icons untuk rata tengah */
+}
+
+.profile-card .social-icons img {
+  width: 37px; /* Mengatur lebar gambar ikon sosial sebesar 37px */
+  height: 37px; /* Mengatur tinggi gambar ikon sosial sebesar 37px */
+  margin: 0 5px; /* Memberikan margin kiri dan kanan sebesar 5px pada setiap ikon */
+}
+
+.button-container {
+  display: flex; /* Menggunakan flexbox untuk mengatur tata letak dalam button-container */
+  flex-direction: column; /* Menyusun item secara vertikal */
+  align-items: flex-start; /* Menyusun item di awal (kiri) secara horizontal */
+  justify-content: center; /* Menyusun item di tengah secara vertikal */
+  margin-left: auto; /* Mengatur margin kiri otomatis untuk menempatkan button-container di tengah secara horizontal */
+  margin-right: auto; /* Mengatur margin kanan otomatis untuk menempatkan button-container di tengah secara horizontal */
+  width: 100%; /* Mengatur lebar button-container sebesar 100% dari lebar parent element */
+  max-width: 511px; /* Mengatur lebar maksimum button-container sebesar 511px */
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Menyusun item dalam navbar secara vertikal */
+    align-items: flex-start; /* Menyusun item di awal (kiri) secara horizontal */
+  }
+  .navbar nav {
+    margin-left: 0; /* Menghilangkan margin kiri pada elemen nav */
+  }
+  .navbar nav a {
+    margin-left: 0; /* Menghilangkan margin kiri pada setiap link dalam nav */
+    margin-right: 20px; /* Memberikan margin kanan sebesar 20px pada setiap link dalam nav */
+  }
+  .navbar .contact-button {
+    margin-top: 10px; /* Memberikan margin atas sebesar 10px pada tombol kontak */
+  }
+  .profile-container {
+    height: auto; /* Mengatur tinggi profile-container secara otomatis sesuai dengan konten */
+    padding: 20px; /* Memberikan padding sebesar 20px di seluruh sisi profile-container */
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px; /* Memberikan padding di seluruh sisi navbar sebesar 10px */
+  }
+  .navbar img {
+    height: 30px; /* Mengatur tinggi gambar logo di navbar sebesar 30px */
+  }
+  .navbar nav a {
+    font-size: 14px; /* Mengatur ukuran font link dalam nav sebesar 14px */
+  }
+  .navbar .contact-button {
+    padding: 6px 12px; /* Memberikan padding di atas/bawah 6px dan kiri/kanan 12px pada tombol kontak */
+  }
+  .profile-card {
+    padding: 10px; /* Memberikan padding sebesar 10px di seluruh sisi kartu profil */
+  }
+  .profile-card .title {
+    font-size: 20px; /* Mengatur ukuran font judul dalam kartu profil sebesar 20px */
+  }
+  .profile-card .description {
+    font-size: 12px; /* Mengatur ukuran font deskripsi dalam kartu profil sebesar 12px */
+  }
+  .profile-card .button {
+    font-size: 12px; /* Mengatur ukuran font dalam tombol kartu profil sebesar 12px */
+  }
+  .profile-card .social-icons img {
+    width: 30px; /* Mengatur lebar gambar ikon sosial sebesar 30px */
+    height: 30px; /* Mengatur tinggi gambar ikon sosial sebesar 30px */
+  }
+}

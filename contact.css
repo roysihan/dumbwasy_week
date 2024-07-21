@@ -1,0 +1,136 @@
+body {
+  font-family: Arial, sans-serif; /* Mengatur font default untuk seluruh halaman */
+  margin: 0; /* Menghilangkan margin default dari body */
+  background-color: #f0f0f0; /* Memberikan warna latar belakang abu-abu muda */
+}
+
+.navbar {
+  position: fixed; /* Menempatkan navbar secara fixed di atas halaman */
+  top: 0; /* Menempatkan navbar di bagian atas halaman */
+  left: 0; /* Menempatkan navbar di sisi kiri halaman */
+  right: 0; /* Menempatkan navbar di sisi kanan halaman */
+  display: flex; /* Menggunakan flexbox untuk mengatur tata letak dalam navbar */
+  justify-content: space-between; /* Mengatur elemen dalam navbar untuk berjauhan */
+  align-items: center; /* Mengatur elemen dalam navbar untuk sejajar di tengah secara vertikal */
+  padding: 10px 20px; /* Memberikan padding di atas dan bawah sebesar 10px dan di kiri dan kanan sebesar 20px */
+  background-color: #ffffff; /* Memberikan warna latar belakang putih pada navbar */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Memberikan bayangan halus di bawah navbar */
+  z-index: 1000; /* Memberikan z-index agar navbar selalu di atas konten lainnya */
+}
+
+.navbar .left-nav {
+  display: flex; /* Menggunakan flexbox untuk mengatur tata letak dalam elemen left-nav */
+  align-items: center; /* Mengatur elemen dalam left-nav untuk sejajar di tengah secara vertikal */
+}
+
+.navbar img {
+  height: 40px; /* Mengatur tinggi gambar logo di navbar */
+}
+
+.navbar nav {
+  display: flex; /* Menggunakan flexbox untuk mengatur tata letak dalam elemen nav */
+  align-items: center; /* Mengatur elemen dalam nav untuk sejajar di tengah secara vertikal */
+  margin-left: 20px; /* Memberikan jarak kiri sebesar 20px pada elemen nav */
+}
+
+.navbar nav a {
+  margin-left: 20px; /* Memberikan jarak kiri sebesar 20px pada setiap link dalam nav */
+  text-decoration: none; /* Menghilangkan garis bawah pada link */
+  color: #000; /* Mengatur warna teks link menjadi hitam */
+  font-size: 16px; /* Mengatur ukuran font link */
+}
+
+.navbar .contact-button {
+  background-color: #000; /* Memberikan warna latar belakang hitam pada tombol */
+  color: #fff; /* Mengatur warna teks pada tombol menjadi putih */
+  padding: 8px 16px; /* Memberikan padding di atas dan bawah sebesar 8px dan di kiri dan kanan sebesar 16px */
+  border-radius: 5px; /* Memberikan radius sudut sebesar 5px untuk membuat sudut tombol menjadi bulat */
+  text-decoration: none; /* Menghilangkan garis bawah pada link */
+}
+
+.form-wrapper {
+  display: flex; /* Menggunakan flexbox untuk mengatur tata letak dalam form-wrapper */
+  justify-content: center; /* Mengatur elemen untuk ditempatkan di tengah secara horizontal */
+  align-items: center; /* Mengatur elemen untuk ditempatkan di tengah secara vertikal */
+  width: 100%; /* Mengatur lebar form-wrapper untuk mengisi seluruh lebar halaman */
+  height: 100%; /* Mengatur tinggi form-wrapper untuk mengisi seluruh tinggi halaman */
+  padding-top: 70px; /* Memberikan padding atas untuk menghindari tumpang tindih dengan navbar */
+  flex-direction: column; /* Mengatur elemen dalam form-wrapper untuk diatur secara vertikal */
+}
+
+.form-container {
+  background-color: #e6ebef; /* Memberikan warna latar belakang abu-abu muda pada form-container */
+  padding: 20px; /* Memberikan padding sebesar 20px di seluruh sisi form-container */
+  border-radius: 10px; /* Memberikan radius sudut sebesar 10px untuk membuat sudut form-container menjadi bulat */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Memberikan bayangan halus di bawah form-container */
+  width: 90%; /* Mengatur lebar form-container sebesar 90% dari lebar halaman */
+  max-width: 600px; /* Mengatur lebar maksimum form-container sebesar 600px */
+  text-align: left; /* Mengatur teks dalam form-container untuk rata kiri */
+}
+
+.form-container h1 {
+  text-align: center; /* Mengatur teks judul untuk rata tengah */
+  margin-bottom: 20px; /* Memberikan jarak bawah sebesar 20px pada judul */
+}
+
+.form-container form {
+  display: flex; /* Menggunakan flexbox untuk mengatur tata letak dalam form */
+  flex-direction: column; /* Mengatur elemen dalam form untuk diatur secara vertikal */
+}
+
+.form-container label {
+  margin-bottom: 5px; /* Memberikan jarak bawah sebesar 5px pada label */
+  font-weight: bold; /* Mengatur teks label menjadi tebal */
+}
+
+.form-container input,
+.form-container textarea {
+  padding: 10px; /* Memberikan padding sebesar 10px pada input dan textarea */
+  margin-bottom: 20px; /* Memberikan jarak bawah sebesar 20px pada input dan textarea */
+  border: 1px solid #ccc; /* Memberikan border dengan warna abu-abu pada input dan textarea */
+  border-radius: 5px; /* Memberikan radius sudut sebesar 5px untuk membuat sudut input dan textarea menjadi bulat */
+  width: 100%; /* Mengatur lebar input dan textarea sebesar 100% dari lebar parent element */
+  box-sizing: border-box; /* Mengatur box-sizing menjadi border-box untuk memastikan padding dan border dihitung dalam lebar dan tinggi elemen */
+}
+
+.form-container button {
+  padding: 10px; /* Memberikan padding sebesar 10px pada tombol */
+  background-color: #000; /* Memberikan warna latar belakang hitam pada tombol */
+  color: #fff; /* Mengatur warna teks pada tombol menjadi putih */
+  border: none; /* Menghilangkan border pada tombol */
+  border-radius: 5px; /* Memberikan radius sudut sebesar 5px untuk membuat sudut tombol menjadi bulat */
+  cursor: pointer; /* Mengubah cursor menjadi pointer saat hover pada tombol */
+  width: 100%; /* Mengatur lebar tombol sebesar 100% dari lebar parent element */
+  max-width: 125px; /* Mengatur lebar maksimum tombol sebesar 125px */
+  align-self: flex-end; /* Mengatur tombol untuk berada di kanan secara horizontal */
+}
+
+.form-container button:hover {
+  background-color: #ff0000; /* Mengubah warna latar belakang tombol menjadi merah saat hover */
+  transition: 0.7s; /* Menambahkan efek transisi selama 0.7 detik */
+}
+
+.list-wrapper {
+  margin-top: 20px; /* Memberikan jarak atas pada list-wrapper */
+  width: 90%; /* Mengatur lebar list-wrapper sebesar 90% dari lebar halaman */
+  max-width: 600px; /* Mengatur lebar maksimum list-wrapper sebesar 600px */
+}
+
+.list-wrapper h2 {
+  text-align: center; /* Mengatur teks judul untuk rata tengah */
+}
+
+.list-wrapper ul {
+  list-style-type: none; /* Menghilangkan bullet pada list */
+  padding: 0; /* Menghilangkan padding default pada list */
+  max-height: 200px; /* Mengatur tinggi maksimum list-wrapper */
+  overflow-y: auto; /* Menambahkan scroll vertikal jika konten melebihi tinggi maksimum */
+}
+
+.list-wrapper ul li {
+  background-color: #fff; /* Memberikan warna latar belakang putih pada list item */
+  margin-bottom: 10px; /* Memberikan jarak bawah sebesar 10px pada list item */
+  padding: 10px; /* Memberikan padding sebesar 10px pada list item */
+  border-radius: 5px; /* Memberikan radius sudut sebesar 5px untuk membuat sudut list item menjadi bulat */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Memberikan bayangan halus pada list item */
+}

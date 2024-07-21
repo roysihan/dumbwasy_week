@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="contact.css" />
+    <!-- Menghubungkan file CSS eksternal -->
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="left-nav">
+        <img src="./logo.png" alt="Logo" />
+        <!-- Menampilkan logo perusahaan -->
+        <nav>
+          <a href="./home.html">Home</a>
+          <!-- Link navigasi ke halaman Home -->
+          <a href="./addmyproject.html">My Project</a>
+          <!-- Link navigasi ke halaman My Project -->
+        </nav>
+      </div>
+      <a href="./contact.html" class="contact-button">Contact Me</a>
+      <!-- Tombol kontak yang mengarah ke WhatsApp -->
+    </div>
+    <div class="form-wrapper">
+      <div class="form-container">
+        <h1>GET IN TOUCH</h1>
+        <!-- Judul form -->
+        <form id="contactForm">
+          <label for="name">Name</label>
+          <!-- Label untuk input nama -->
+          <input type="text" id="name" name="name" required />
+          <!-- Input untuk nama, bersifat wajib diisi -->
+
+          <label for="email">Email</label>
+          <!-- Label untuk input email -->
+          <input type="email" id="email" name="email" required />
+          <!-- Input untuk email, bersifat wajib diisi -->
+
+          <label for="phone">Phone Number</label>
+          <!-- Label untuk input nomor telepon -->
+          <input type="tel" id="phone" name="phone" required pattern="[0-9]+" />
+          <!-- Input untuk nomor telepon, bersifat wajib diisi -->
+
+          <label for="subject">Subject</label>
+          <!-- Label untuk input subjek -->
+          <input type="text" id="subject" name="subject" required />
+          <!-- Input untuk subjek, bersifat wajib diisi -->
+
+          <label for="message">Your message</label>
+          <!-- Label untuk textarea pesan -->
+          <textarea id="message" name="message" rows="6" required></textarea>
+          <!-- Textarea untuk pesan, bersifat wajib diisi, memiliki 6 baris -->
+
+          <button type="submit">Submit</button>
+          <!-- Tombol submit untuk mengirimkan form -->
+        </form>
+      </div>
+    </div>
+    <div class="list-wrapper">
+      <h2>Submitted Forms</h2>
+      <ul id="submissionList">
+        <!-- Daftar untuk menampilkan data yang dikirim -->
+      </ul>
+    </div>
+    <script src="contact.js"></script>
+    <!-- Menghubungkan file JavaScript eksternal -->
+  </body>
+</html>

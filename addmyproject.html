@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="addmyproject.css" />
+    <!-- Menghubungkan file CSS eksternal -->
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="left-nav">
+        <img src="./logo.png" alt="Logo" />
+        <!-- Menampilkan logo perusahaan -->
+        <nav>
+          <a href="./home.html">Home</a>
+          <!-- Link navigasi ke halaman Home -->
+          <a href="./addmyproject.html">My Project</a>
+          <!-- Link navigasi ke halaman My Project -->
+        </nav>
+      </div>
+      <a href="./contact.html" class="contact-button">Contact Me</a>
+      <!-- Tombol kontak yang mengarah ke WhatsApp -->
+    </div>
+    <div class="form-wrapper">
+      <div class="form-container">
+        <h1>GET IN TOUCH</h1>
+        <!-- Judul form -->
+        <form id="contactForm">
+          <label for="name">Name</label>
+          <!-- Label untuk input nama -->
+          <input type="text" id="name" name="name" required />
+          <!-- Input untuk nama, bersifat wajib diisi -->
+
+          <label for="startDate">Start Date</label>
+          <!-- Label untuk input tanggal mulai -->
+          <input type="date" id="startDate" name="startDate" required />
+          <!-- Input untuk tanggal mulai, bersifat wajib diisi -->
+
+          <label for="endDate">End Date</label>
+          <!-- Label untuk input tanggal akhir -->
+          <input type="date" id="endDate" name="endDate" required />
+          <!-- Input untuk tanggal akhir, bersifat wajib diisi -->
+
+          <label for="message">Your message</label>
+          <!-- Label untuk textarea pesan -->
+          <textarea id="message" name="message" rows="6" required></textarea>
+          <!-- Textarea untuk pesan, bersifat wajib diisi, memiliki 6 baris -->
+
+          <label for="technologies">Technologies</label>
+          <div class="checkbox-group">
+            <label
+              ><input type="checkbox" name="technologies" value="Node Js" />
+              Node Js</label
+            >
+            <label
+              ><input type="checkbox" name="technologies" value="React Js" />
+              React Js</label
+            >
+            <label
+              ><input type="checkbox" name="technologies" value="Next Js" />
+              Next Js</label
+            >
+            <label
+              ><input type="checkbox" name="technologies" value="TypeScript" />
+              TypeScript</label
+            >
+          </div>
+          <!-- Checkbox untuk memilih teknologi -->
+
+          <label for="imageUpload">Upload image</label>
+          <input
+            type="file"
+            id="imageUpload"
+            name="imageUpload"
+            accept="image/*"
+            required
+          />
+          <!-- Input untuk mengunggah gambar -->
+
+          <button type="submit">Submit</button>
+          <!-- Tombol submit untuk mengirimkan form -->
+        </form>
+      </div>
+    </div>
+    <div class="list-wrapper">
+      <h2 class="center-text">My Project</h2>
+      <div id="submissionList" class="project-list">
+        <!-- Daftar untuk menampilkan data yang dikirim -->
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <!-- Menghubungkan file JavaScript eksternal -->
+  </body>
+</html>
